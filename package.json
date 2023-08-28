@@ -1,0 +1,17 @@
+{
+    "name": "Plugin: Scroller",
+    "author": "Florian Wesch <fw@info-beamer.com>",
+    "desc": "Displays a horizontal text scroller",
+    "repository": "https://github.com/info-beamer/package-hdv2-plugin-scroller",
+    "platforms": ["pi/v7", "pi/epoch-2"],
+    "lifecycle": "beta",
+    "version": "1",
+    "offline": {
+        "support": "yes",
+        "info": "Does not require an internet connection"
+    },
+    "nesting": {
+        "parents": ["hdv2-player-plugin"],
+        "childs": []
+    }
+}
