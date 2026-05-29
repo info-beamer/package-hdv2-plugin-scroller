@@ -1,47 +1,11 @@
 {
     "name": "Plugin: Scroller",
     "options": [{
-        "title": "Scroller",
+        "title": "Scroller content",
         "type": "section"
     }, {
-        "title": "Font",
-        "ui_width": 4,
-        "name": "font",
-        "type": "font",
-        "doc_link": true,
-        "default": "default-font.ttf"
-    }, {
-        "title": "Size",
-        "ui_width": 2,
-        "type": "integer",
-        "name": "size",
-        "default": 100
-    }, {
-        "title": "Font Color",
-        "ui_width": 2,
-        "type": "color",
-        "name": "color",
-        "default": [1,1,1,1]
-    }, {
-        "title": "Scroll Speed",
-        "ui_width": 4,
-        "name": "speed",
-        "type": "select",
-        "options": [
-            [ 30, "Slow"],
-            [ 60, "Normal"],
-            [120, "Fast"],
-            [180, "Faster"],
-            [240, "Even faster"]
-        ],
-        "default": 120
-    },
-
-    {
-        "title": "Content",
-        "type": "section"
-    }, {
-        "title": "Scroller content and appearance",
+        "title": "",
+        "tab": "Fixed content",
         "name": "texts",
         "type": "list",
         "itemname": "Text",
@@ -59,10 +23,14 @@
             "name": "color",
             "default": [0,0,0,0]
         }, {
-            "title": "Blink",
+            "title": "Effect",
             "ui_width": 2,
-            "type": "boolean",
-            "name": "blink",
+            "type": "select",
+            "name": "effect",
+            "options": [
+                [false, "None"],
+                ["blink", "Blink"]
+            ],
             "default": false
         }, {
             "title": "Show",
@@ -72,5 +40,47 @@
             "name": "show",
             "default": true
         }]
+    }, {
+        "title": "Presentation",
+        "type": "section"
+    }, {
+        "title": "Font",
+        "ui_width": 4,
+        "name": "font",
+        "type": "font",
+        "doc_link": true,
+        "default": "default-font.ttf"
+    }, {
+        "title": "Size",
+        "hint": "Size in pixel",
+        "ui_width": 4,
+        "type": "integer",
+        "name": "size",
+        "default": 100
+    }, {
+        "title": "Scroll Speed",
+        "ui_width": 4,
+        "name": "speed",
+        "type": "select",
+        "options": [
+            [ 30, "Slow"],
+            [ 60, "Normal"],
+            [120, "Fast"],
+            [180, "Faster"],
+            [240, "Even faster"]
+        ],
+        "default": 120
+    }, {
+        "title": "Foreground/Text Color",
+        "ui_width": 4,
+        "type": "color",
+        "name": "color",
+        "default": [1,1,1,1]
+    }, {
+        "title": "Background Color",
+        "ui_width": 4,
+        "type": "color",
+        "name": "background_color",
+        "default": [0,0,0,0]
     }]
 }
